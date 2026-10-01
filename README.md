@@ -31,7 +31,7 @@ Response:
 {
   "reply": "Got it — a couple of quick questions…",
   "gherkin": "Feature: …\n  Scenario: …",
-  "model": "gemini-3.5-flash-lite"
+  "model": "gemini-3.8-flash"
 }
 ```
 
@@ -44,7 +44,7 @@ Response:
 ```json
 { "text": "Members can apply a discount code at checkout", "context": "E-commerce" }
 ```
-→ `{ "gherkin": "Feature: …", "model": "gemini-3.5-flash-lite" }`
+→ `{ "gherkin": "Feature: …", "model": "gemini-3.8-flash" }`
 
 ### `GET /health`
 
@@ -57,4 +57,4 @@ the API key secret is set.
 2. Deploy: this repo includes `render.yaml` — connect it to Render (free tier) and it
    deploys as-is. Or run locally: `pip install -r requirements.txt && uvicorn app:app`.
 3. Set the `GEMINI_API_KEY` environment variable / secret to your key.
-4. Optional: override the model with `GEMINI_MODEL` (default `gemini-3.5-flash-lite`).
+4. Optional: override the model with `GEMINI_MODEL` (default `gemini-3.8-flash`).
